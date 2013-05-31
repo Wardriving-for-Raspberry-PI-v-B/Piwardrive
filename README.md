@@ -32,7 +32,9 @@ The pinout is:
 (upload)pin15=GPIO22	pin22=GPIO25(powerSW)
 pin25=GND
 So far, the GPSD "OK" LED bit is tested and working, more to come...
+The Software for the Piwardrive PCB is under the following Licence: 
+Creative Commons Attribution-NonCommercial 3.0 Unported.
+The PCB circuit it self is under copyright.
+The prototypes is on their way to the owner of this GIT project, and will undergo testing and some assembly.
 
-
-Licence: Creative Commons Attribution-NonCommercial 3.0 Unported.
 
