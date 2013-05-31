@@ -6,7 +6,7 @@ Functions:
 A Led marked GPSD that lights if GPSD is running ok.
 A Led that signals if kismet is running.
 A led that shows if the GPS has a position fix.
-A LED marked POEWER that goes dark if Raspberry has done a safe halt, and power can be disconnected without 
+A LED marked POWER that goes dark if Raspberry has done a safe halt(shutdown), and power can be disconnected without 
 risking damage to the system.
 A LED that lights up when upload to wigle.net is in progress.
 This will only happen if: Your home wlan node is in reach, the Raspberry is connected to it, and wigle.net is reachable.
