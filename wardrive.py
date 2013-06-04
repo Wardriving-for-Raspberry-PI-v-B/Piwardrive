@@ -10,7 +10,7 @@ GPIO.setup(04, GPIO.OUT)#LED1 KISMET
 GPIO.setup(17, GPIO.OUT)#LED2 GPSD running
 GPIO.setup(9, GPIO.OUT)#LED5 Upload in progress.
 GPIO.setup(26, GPIO.IN)#Data upload switch,momentarily toggle.
-GPIO.setup(7 , GPIO.IN)#Power off button.
+GPIO.setup(7, GPIO.IN, pull_up_down=GPIO.PUD_UP)#Power button,triggers on falling flank.  
 GPIO.output(04, True)#Makes sure all LED's are at the same state initially (off):
 GPIO.output(17, True)
 GPIO.output(22, True)
