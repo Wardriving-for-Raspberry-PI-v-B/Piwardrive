@@ -28,6 +28,7 @@ while True:
         if (GPIO.input(26)): #If upload button is pressed
             uploadButton()
         if (GPIO.input(7)): #If power button is pressed
+            time.sleep(0.05)
             os.system("shutdown -h now")
 
 
