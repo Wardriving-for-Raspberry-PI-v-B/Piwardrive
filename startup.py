@@ -9,7 +9,7 @@ import os
 import time
 os.system("gpsd /dev/ttyUSB0 -F /var/run/gpsd.sock")#starts up gpsd using the default USB port.
 time.sleep(2.5)#Added in case gpsd needs some time to start up
-os.system("kismet_server -s --daemonize -c wlan0")#starts up kismet_server in the background.
+os.system("kismet_server -s --daemonize")#starts up kismet_server in the background.
 os.system("python /home/pi/Piwardrive/wardrive.py")#starts up the main script.
 #NOTES:
 #kismet_server reads config file /usr/local/etc/kismet.conf upon start,
