@@ -31,6 +31,14 @@ They are IRF540N and IRF9540N
 Solder the USB connectors.
 12:
 Solder SW1, SW2. 
+13:
+Install a short wire connecting the center solder pad of JP1 and the one marked AUTO.
+This causes the Piwardrive to power up the Rasberry Pi automaticly.
+If you want it to stay off until the ON/OFF button is pressed, connect AUTO to OFF.
+14: Install a USB to MINI USB connecting the USB that is located above 
+the UPLOAD button to the Rasberry Pi's mini usb connector.
+Plug in a USB cable that supplies power to the connector located over the ON/OFF button.
+
 
 Options:
 SW1, SW2.can be subsituted for a pair of momentairly Single pole, double trow switches if you 
