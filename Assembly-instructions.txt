@@ -1,0 +1,45 @@
+The front side of the PCB is the side with the dragon and pictures of the placement 
+of all the components exept the GPIO header conn13x2.
+Some soldering experience is neccesary, there are many "how to"'s on the net.
+If you are unsure, ask a Amateur radio operator for help or guidance.
+
+1:
+Solder all the 330 ohm resistors first.
+They are : R2, R4, R5, R6, and R7 on the PCB.
+2:
+Solder the 100K ohm resistors R3 and R9.
+3:
+Solder resistor R1 (10 Kohm) and R10 (1Kohm), and R8 (300Kohm).
+4:
+Solder C1 and C3 (0.1uF).
+5:
+Solder C4 (10uF) and C2 (1uF).
+6:
+Solder D3, D4, D6, D7, D8, D9, 3.3V zener diodes. The cathode must point accordingly to the pictures on the PCB.
+The thin line or double bottom on the symbol depicts the cathode.
+7:
+Solder the diode D1.The cathode must point accordingly to the picture on the PCB.
+8:
+Solder LEDs D2, D5, D10, D11, D12.
+They must have the flat side facing upwards to the UPLOAD switch.
+9:
+Solder Conn13x2, it is on the Reverse side of the PCB.
+10:
+Solder the FET's on the normal side of the PCB.
+They are IRF540N and IRF9540N
+11:
+Solder the USB connectors.
+12:
+Solder SW1, SW2. 
+
+Options:
+SW1, SW2.can be subsituted for a pair of momentairly Single pole, double trow switches if you 
+want to mount them on the outside surface of a box. Digi-Key Part Number  360-1182-ND is a example a switch useable.
+The Diodes can also be mounted in the same manner, if they are connected remotely to the PCB boards.
+It is the neccesary to mount them in Diode holders, Digi-Key Part Number  67-1333-ND is suitable. 
+There are many variants, in crome or black plastic, or grey plastic.
+The GPIO header can be extended with a extention cable if needed. 
+You will need a suitable set of non conducting spacers and non conducting mounting hardware for that.
+There is a pair of suitable holes on the PCB.
+
+
