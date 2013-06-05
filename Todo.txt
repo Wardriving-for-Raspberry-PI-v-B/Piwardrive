@@ -1,7 +1,3 @@
-Create a script that is launced automaticly on boot,or perhaps 3 seconds after.
-The script should start up kismet and gpsd on boot ( if it is not possible to do that with dpkg-reconfigure).
-The process is documented here:
-http://www.megaleecher.net/Raspberry_Pi_Autostart
-Make assembly instructions for the PCB and write a list of needed components for the Piwardrive PCB.
+Create a script that is launced automaticly on boot.
 Assembly at least on of the prototype PCB's and test it.
 
