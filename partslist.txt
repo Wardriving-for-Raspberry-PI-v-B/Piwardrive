@@ -1,6 +1,7 @@
 Partslist for Piwardrive v1.0
+The Partnumbers are digikeys.
 
-0.1uF       2	"C1, C3"	                  Tantal, non polarized,radial, digikey 399-3527-nd           
+0.1uF       2	"C1, C3"	                  Tantal, non polarized,radial,399-3527-nd           
 100K	      2	"R3, R9"	                  0.5W carbon	,PPCHJ100KCT-ND
 10K	        1	"R1"			                  0.5W carbon,19KH-ND
 10uF	      1	"C4"		                    tantal 399-9897-ND
