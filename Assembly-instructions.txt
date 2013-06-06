@@ -32,7 +32,7 @@ Solder the USB connectors.
 12:
 Solder SW1, SW2. 
 13:
-Install a short wire connecting the center solder pad of JP1 and the one marked AUTO.
+Install a short wire connecting the center solder pad(AUTO) of JP1 and the one marked ONN.
 This causes the Piwardrive to power up the Rasberry Pi automaticly.
 If you want it to stay off until the ON/OFF button is pressed, connect AUTO to OFF.
 14: Install a USB to MINI USB connecting the USB that is located above 
