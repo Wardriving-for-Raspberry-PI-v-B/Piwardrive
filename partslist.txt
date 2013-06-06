@@ -10,7 +10,7 @@ The Partnumbers are digikeys.
 3.3V	      6	"D3, D4, D6, D7, D8, D9"    Zener diodes,1n5226bfsct-nd
 300K	      1	"R8"                        0.5W carbon,PPCHJ300KCT-ND
 330	        5	"R2,R4,R5,R6,R7"            0.5W carbon,PPC330BCT-ND
-CONN_13X2	  1	"P1",                       Header,26pins,A106622-ND
+CONN_13X2	  2	"P1",                       Header,26pins,A106622-ND (2 pieces because they need to be stacked)
 DIODE	      1	"D1",                       1N4001-TPMSCT-ND
 IRF540N	    1	"Q2",                       IRF540NPBF-ND
 IRF9540N	  1	"Q1",                       IRF9540NPBF-ND
