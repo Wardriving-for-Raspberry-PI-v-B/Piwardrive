@@ -1,3 +1,4 @@
+#!/usr/bin/env python 
 import os
 import RPI.GPIO as GPIO
 from gps import *
