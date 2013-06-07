@@ -53,7 +53,7 @@ def executeGPS():
         
 def uploadButton():
     time.sleep(0.05)
-    os.system("killall kismet")
+    os.system("killall kismet_server")
     time.sleep(3)# added so kismet has the time to die.
     os.system("iwconfig wlan0 essid " + configFile.get('Home Wireless Setup', 'ssid') + " key " + configFile.get('Home Wireless Setup', 'network_key'))#Connects to your home Wireless
     time.sleep(10)# added so wlan0 has time to autenticate and assosiate with the wlan node
@@ -68,6 +68,12 @@ def uploadButton():
         #This uploads the output file from kismet to wigle.net. It used the cookie retrived from before during the upload process so it is authenticated.
         upload = subprocess.Popen("curl -b wigleCookie.txt -F \"stumblefile=@/var/log/kismet -d \"Send=Send&observer=" + wigleUsername + " https://wigle.net/gps/gps/main/postfile", shell=True, stdout=PIPE, stderr=PIPE)
         uploadOut, uploadErr = upload.communicate()
+        command = os.system('ifconfig wlan0 down')#disables the wireless interface, i think thats a "ugly" way to disconnect.
+        command = os.system('dhclient -r wlan0')#Releases the DHCP IP.
+        command = os.system('ifconfig wlan0 up')#turns the interface back on, so kismet can access it.
+        time.sleep(1.5)#pause so wlan0 has time to come up.
+        #command = os.system('rm -v /path/to/kismet/logfiles/*.cap') grabs path from config file, and deletes all .cap files in it. The -v option displays info about the deletion process.
+        command = os.system('kismet_server -s --daemonize')#restarts kismet_server to resume scanning. 
         #Then deleting the uploaded file from /kismet-logs, disconnects from the wlan node and resumes (restarts kismet?)
     else:
         print "This executes when there is no connectivity to wigle.net"#Line to be removed (Used for Dubugging)
@@ -89,5 +95,5 @@ def connectivityTest():
             print "There is no DHCP server"#Line to be removed (Used for Dubugging)
             return False
     else:
-        print "There is connectivity"#Line to be removed (Used for Dubugging)
+        print "There is connectivity"#Line to be removed (Used for Debugging)
         return True
