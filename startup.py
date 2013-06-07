@@ -1,8 +1,6 @@
+#!/usr/bin/env python 
 #This is a startup script that starts the processes needed for Piwardrive.
 #It needs to be executed atomatic on boot.
-#You need to add a crontab entry in your crontab file for that to happen.
-#become root with sudo bash, enter crontab -e to edit the crontab file
-#Add the following text: @reboot  python /home/pi/Piwardrive/startup.py 
 #press ctrl + o to save the file. if everything is ok, crontab spits out crontab: installing new crontab when the file is saved.
 #This file needs to be set as a executable file with: chmod 755 /home/pi/Piwardrive/startup.py
 #
