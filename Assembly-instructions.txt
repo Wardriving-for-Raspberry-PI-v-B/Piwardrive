@@ -39,8 +39,9 @@ If you want it to stay off until the ON/OFF button is pressed, connect AUTO to O
 the UPLOAD button to the Rasberry Pi's mini usb connector.
 Plug in a USB cable that supplies power to the connector located over the ON/OFF button.
 15:
-Plug in the remaining 26 pin header in to the header soldered on the Piwardrive, this is needed to achieve the necceary
+Plug in the Extender ( 26 pin ) in to the header soldered on the Piwardrive, this is needed to achieve the necceary
 disctance so the Piwardrive clears the USB connectors and components on the Raspberry.
+You may need two of these.
 
 
 Options:
